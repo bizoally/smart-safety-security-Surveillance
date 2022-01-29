@@ -10,13 +10,25 @@
 
 </head>
 <body>
+    <div>
     <!-- marquee over --><!-- header over -->
     <div align="center">
 <header class="header" >
 <div class="icon"> Bit2Byte </div>
 <ul class="menu-list">
 
-    <li class=menu-item>
+    <li class="menu-item" >
+<a href="#">Home</a>
+<a href="#tips">Tips</a>
+<a href="#symptoms">Symptoms</a>
+<a href="#youtube">YouTube</a>
+<a href="#faq">FAQs</a>
+    </li>
+
+</ul>
+<ul class="mob-menu" >
+<p style="font-size: 20px;" onclick="showmobmenu()" ondblclick="offmenu()">&#9776;</p>
+    <li class="menu-item" id="mob-icon">
 <a href="#">Home</a>
 <a href="#tips">Tips</a>
 <a href="#symptoms">Symptoms</a>
@@ -30,105 +42,74 @@
 <!-- slider start -->
 <div class="slider">
     <div class="slider-text">
-        <span>Confused about where to get the right information about COVID-19 ?</span>
-<h3>Don't worry, We got you !</h3>
+        <span> SMART SAFETY, SECURITY AND SUREILLANCE</span>
+<h3> SMART ATM FOR SECURE TRANSCTIONS </h3>
 <marquee onmouseover="stop()" onmouseout="start()">
-    Breaking News : Pandemic will End Soon
+    Our project makes offline ATM transactions more safer adding another layer of security i.e. face
+    recognition
 </marquee>
     </div>
     
 <div class="slider-img">
-    <img src="Virus-rafiki.png" alt="virus-img" />
+    <img src="atmuse.png" alt="virus-img" />
 </div>
 
-
+</div>
 </div>
 <!--slider over-->
 <!--flip box-->
 <div class="flipbox-container" id="tips">
-    <h3 class="heading">Important Tips </h3>
+    <h3 class="heading">Applications</h3>
+    
     <div class="flip-box">
-        <img class="box-img" src="mask.png">
-        <h4 class="sub-text">Wear Mask </h4>
+        <img class="box-img" src="fingerprint.png">
+        <h4 class="sub-text">Authentication</h4>
     </div>
     <div class="flip-box">
-        <img class="box-img" src="handwash.png">
-        <h4 class="sub-text">Wash Hands </h4>
+        <img class="box-img" src="ai.png">
+        <h4 class="sub-text">AI & ML </h4>
+    </div>
+    <div class="flip-box">
+        <img class="box-img" src="user.png">
+        <h4 class="sub-text">Identification</h4>
+    </div>
+    <div class="flip-box">
+        <img class="box-img" src="bank.png">
+        <h4 class="sub-text">Banking </h4>
     </div>
 
 </div>
 <div class="details-table" align="center" id="symptoms">
-    <h3 class="heading">Symptoms </h3>
+    <h3 class="heading">Other Applications </h3>
     <table class="table">
         <tbody>
             <tr>
                 <td class="top-td">
-                    Symptom</td>
+                    Secure Payment</td>
                     <td class="top-td">
-                    Severity </td>
+                        Vehicle Safety </td>
                     <td class="top-td">
-                    Advice
+                        Unlock devices
                 </td>           </tr>
-
                 <tr>
-                    <td>
-                        Fever
-                    </td>
-                    <td>
-                        Mild
-                    </td>
-                    <td>
-                        Drink plenty of fluids, particularly water.
-                    </td>
+                    <td class="top-td">
+                        Secure Payment</td>
+                        <td class="top-td">
+                            Vehicle Safety </td>
+                        <td class="top-td">
+                            Unlock devices
+                    </td>           </tr>
     
-                             </tr>
-                    <tr>
-                        <td>
-                            Cold
-                        </td>
-                        <td>
-                            Mild
-                        </td>
-                      
-        
-                        <td>
-                            Drink plenty of fluids, particularly water.
-                        </td>            </tr>
-
-                        <tr>
-                            <td>
-                                Cough
-                            </td>
-                            <td>
-                                Mild
-                            </td>
-                          
-            
-                            <td>
-                                Drink plenty of fluids, particularly water.
-                            </td>            </tr>
-
-                            <tr>
-                                <td>
-                                    Tiredness
-                                </td>
-                                <td>
-                                    Mild
-                                </td>
-                              
-                
-                                <td>
-                                    Drink plenty of fluids, particularly water.
-                                </td>            </tr>
+               
         </tbody>
     </table>
 </div>
 
-<h3 class="heading">Symptoms Explained </h3>
+<h3 class="heading">Explained Usage </h3>
 <div class="hover-div">
     
         <ul class="title-1">
-            <li class="hover-title" id="title1" onmouseover="changetext1()">Hello</li>
+            <li class="hover-title" id="title1" onmouseover="changetext1()">test</li>
             <li class="hover-title" id="title2" onmouseover="changetext2()">Hello</li>
             <li class="hover-title" id="title3" onmouseover="changetext3()">Hello</li>
              <li class="hover-title" id="title4" onmouseover="changetext4()">Hello</li>
@@ -143,26 +124,20 @@
 
 <!-- second vid section-->
 <div>
+    <h3 class="heading">YouTube </h3>
     <div class="vid-vid" id="youtube">
-        <h3 class="heading">YouTube </h3>
-        <table>
-            <tr>
-                <td>
+      
+
 <!-- https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb-->
                     <iframe width="660" height="315" src="" allowfullscreen></iframe>    
-      
-                </td>
-                <td>
+
                     <div class="vid-content">WHO is issuing the COVID-19 Strategic Preparedness and Response Plan (SPRP) for 2021 and accompanying documents as a package  aimed at guiding the coordinated action that we must take at national, regional, and global levels to overcome the ongoing challenges in the response to COVID-19, address inequities, and plot a course out of the pandemic.
 
                         Over the past year, much has been achieved by national authorities and communities with the support of WHO, donors and partners, and an unprecedented effort by the scientific community and the private sector.
                         As leader of the global incident management support team (IMST) structure, the UN Crisis Management Team (UNCMT), and as a founder of the Access to COVID-19 Tools (ACT) Accelerator, WHO harnesses the world’s technical and operational expertise to translate knowledge into coordinated action
                     <p>Source: WHO</p>
                     </div> 
-                </td>
-            </tr>
-        </table>
-          
+
     </div>
     
 </div>
@@ -193,6 +168,36 @@
 </div>
 
 <footer>
+    <div class="footer-container">
+        <div>
+<h4>About Us</h4>
+<p>
+    Bit2Byte, We Are From VIPS-TC 
+</p>
+        </div>
+        <div>
+            <h4> Project </h4>
+            <p>
+                Bit2Byte, We Are From VIPS-TC 
+            </p>
+        </div>
+        <div>
+            <h4>Team Members</h4>
+            <ul>
+                <li>Aniket Mishra</li>
+                <li>Nayan Ahuja</li>
+                <li>Aryan Mishra</li>
+                <li>Sidak Singh</li>
+                
+            </ul>
+        </div>
+        <div>
+            <h4>Bit2Byte</h4>
+            <p>
+                We Are From VIPS-TC 
+            </p>
+        </div>
+    </div>
 <p>Stay Safe! Stay Healthy!! Created By Aniket Mishra</p>
 </footer>
 

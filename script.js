@@ -19,3 +19,13 @@ function changetext2(){
  function back(){
     text1.innerHTML=' <p class="showonce">Click on the Title You Want to Know about</p> ';
  }
+ var mobcount=0;
+ var mobicon=document.getElementById('mob-icon');
+ function showmobmenu(){
+   mobcount+=1;
+   mobicon.style.display='block';
+if (mobcount==2){
+   mobicon.style.display='none';
+   mobcount -=2
+}
+ }

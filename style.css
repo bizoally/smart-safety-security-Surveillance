@@ -1,11 +1,15 @@
 :root{
     --primary:   #1b4dc1;
+    --slider:#051a2b;
     --red:#ff3333;
+    --text:#FFDF95;
+    --secondary:#ae601f;
+    --hover:#ff5858;
 }
 .hover-div{
     padding:60px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 } 
 .showonce{
     font-size: 20px;
@@ -15,15 +19,26 @@
     border: 5px double #fff;
     font-size: 18px;
     padding: 30px;
-    background: #eee;
+    background: linear-gradient(69deg,var(--slider) 55%,var(--secondary));
     height: 249px;
+    line-height: 30px;
+    color:#fff;
     margin-top: -10px;
 }
+.hover-div .hover-title:hover{
+    background: var(--hover);
+}
 .hover-div .hover-title{
+    cursor: pointer;
     padding:10px;
     list-style: none;
     height: 40px;
-    border:2px solid #eee;
+    border:2px solid var(--secondary);
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 550;
+    background:linear-gradient(293deg,var(--slider) 55%,var(--secondary));
+    color:#fff;
 }
 .hover-text{
     width:60% ;
@@ -44,83 +59,93 @@ marquee{
 
 }
 .top-td{
+    height:50px;
+    text-align: center;
+    font-weight: 800;
+}
+
+td{
+text-align: center;
     height:40px;
 }
-div{
-    margin-top:20px;
-}
-td{
-    height:33px;
-}
 .faq-item:hover{
-    background-color: snow;
+    background-color: var(--hover);
 }
 .faq-item{
-    border: 5px double var(--primary);
+    cursor: pointer;
+    border: 5px double var(--secondary);
     padding:23px;
     margin:5px;
     border-radius:30px;
-    background:#eee;
+    background:var(--slider);
+    color:#fff;
 }
 footer{
     margin-top:20px;
-    border-radius: 10px;
-    background: linear-gradient(0deg, #434972, var(--primary));
+    border-start-end-radius: 100px;
+    background: linear-gradient(180deg, var(--slider) 55%, var(--secondary));
     color: #fff;
     font-size: 18px;
-    line-height: 0px;
+    line-height: 30px;
     text-align: center;
     padding: 10px;
     margin-bottom: -30px;
 }
 .vid-vid{
-    padding: 50px;
+    padding-inline-start: 50px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .vid-content{
     padding: 30px;
+    width: 60%;
     font-size:17px;
-    float: right;
 }
-.vid-content:after{
-    clear:both ;
-}
+
 .flipbox-container{
     border-radius: 20px;
     text-align: center;
 }
 .flip-box{
-    background:#eee;
-    width:47%;
+    background: var(--slider);
+    width:22%;
     display: inline-block;
-    border: 5px double var(--primary);
+    color:#fff;
+    cursor: pointer;
+    border: 5px double var(--secondary);
     border-radius: 40px;
 }
 iframe{
-    border: 3px solid var(--primary);
+    border: 3px solid var(--secondary);
     padding: 10px;
     background: #eee;
 }
 .table{
-    background:#eee;
-    border: 6px solid var(--primary);
+    border-collapse: separate;
+    border-spacing: 10 10px;
     width:94%;
     border-radius: 20px;
 }
 .table tr td:hover{
-    background:snow;
+    background: var(--hover);
 }
 .table tr td{
-    border: 3px solid var(--primary);
+    cursor: pointer;
+    border: 3px solid var(--secondary);
     width: 31%;
+    background: var(--slider);
+    color:#fff;
     border-radius:5px;
-
+    font-size: 20px;
+    border-radius: 15px;
 }
 .flip-box:hover{
-    border-color: var(--red);
-    background:snow;
+    border-color: var(--secondary);
+    background:var(--hover);;
 }
 .box-img{
-    width:17vw;
+    width:14vw;
+    padding-top: 10px;
 }
 .sub-text{
     display: inline-block;
@@ -129,12 +154,13 @@ iframe{
 .heading{
     text-align: center;
     font-size: 2em;
+    font-family: cursive;
 }   
 header{
     text-align: left;
     width: 90%;
     border-radius: 18px;
-    background: linear-gradient(110deg, #434972, var(--primary));
+    background: linear-gradient(110deg, var(--secondary), var(--slider) 55%);
     color: #fff;
     border-bottom: 5px solid #fff;
 }
@@ -157,15 +183,18 @@ font-weight: 900;
     padding: 3px;
 }
 .slider{
-    background: var(--primary);
+    background:linear-gradient(69deg,var(--slider) 55%,var(--secondary)) ;
     color: #fff;
     font-weight: 900;
     padding: 30px;
+    display: flex;
+    flex-wrap: nowrap;
     border-radius: 30px;
     height: 300px;
 
 }
 .slider-text{
+    text-align: center;
     width:70%
 }
 .slider-text h3{
@@ -178,8 +207,93 @@ text-align: center;
     }
 .slider-img img{
     width: 30%;
-    float: right;
-    margin-top:-250px;
     width: 300px;
     margin-right: 50px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer-container div{
+    width: 24%;
+}
+.footer-container div:not(:first-child){
+    border-left: 5px solid #fff;
+}
+/* mobile css */
+@media screen and (max-width:768px){
+    .slider{
+flex-wrap: wrap;
+height:max-content;
+
+    }
+    .slider-text{
+width:100%;
+    }
+    .flip-box{
+        margin-top:8px;
+        width:100%;
+    }
+    .slider-text h3{
+        font-size:40px;
+    }
+    .vid-vid{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .box-img{
+        margin-top: 17px;
+    margin-left: 30px;
+    float: left;
+    }
+    .top-td{
+        height: 80px;
+    }
+    .hover-div{
+        padding: 0px;
+    }
+    .menu-list{
+        display: none;
+    }
+    .mob-menu{
+        list-style: none;
+        display: block;
+        line-height: 26px;
+    }
+    .menu-item a{
+        display: block;
+        color: #fff;
+    }
+
+    .header{
+        width: 100%;
+        display: flex;
+    }
+    .menu-item{
+        display: none;
+    }
+    .icon{
+        margin-top: 24px;
+        margin-left: 17px;
+        width: 60%;
+    }
+    .footer-container{
+        display: block;
+    }
+    .footer-container div:not(:first-child){
+        border-left: 0px solid #fff;
+    }
+    .footer-container div{
+        width: 100%;
+        border-bottom: 2px solid;
+    }
+    footer{
+        text-align: left;
+    }
+
+}
+@media screen and (min-width:768px) {
+    .mob-menu{
+        display: none;
+    }
 }

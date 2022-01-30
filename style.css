@@ -6,6 +6,9 @@
     --secondary:#ae601f;
     --hover:#ff5858;
 }
+body{
+ margin:0px;   
+}
 .hover-div{
     padding:60px;
     display: flex;

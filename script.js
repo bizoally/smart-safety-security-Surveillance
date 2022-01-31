@@ -39,21 +39,23 @@ if (mobcount==2){
    }
 
  }
+ var faqopen2=0
  function showfaq2(){
    var faqitem=document.getElementById('faq2').style.display='block';
-   faqopen +=1;
+   faqopen2 +=1;
    if (faqopen==2){
       var faqitem=document.getElementById('faq2zzz').style.display='none';
-      faqopen =0
+      faqopen2 =0
    }
 
  }
+ var faqopen3=0
  function showfaq3(){
    var faqitem=document.getElementById('faq3').style.display='block';
-   faqopen +=1;
+   faqopen3 +=1;
    if (faqopen==2){
       var faqitem=document.getElementById('faq3').style.display='none';
-      faqopen =0
+      faqopen3 =0
    }
 
  }

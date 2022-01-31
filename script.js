@@ -43,7 +43,7 @@ if (mobcount==2){
  function showfaq2(){
    var faqitem=document.getElementById('faq2').style.display='block';
    faqopen2 +=1;
-   if (faqopen==2){
+   if (faqopen2==2){
       var faqitem=document.getElementById('faq2zzz').style.display='none';
       faqopen2 =0
    }
@@ -53,7 +53,7 @@ if (mobcount==2){
  function showfaq3(){
    var faqitem=document.getElementById('faq3').style.display='block';
    faqopen3 +=1;
-   if (faqopen==2){
+   if (faqopen3==2){
       var faqitem=document.getElementById('faq3').style.display='none';
       faqopen3 =0
    }

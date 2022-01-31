@@ -5,9 +5,11 @@
     --text:#FFDF95;
     --secondary:#ae601f;
     --hover:#ff5858;
+    --shadowbox:-5px -6px 10px 1px #b15e1991;
+    
 }
 body{
- margin:0px;  
+    margin:0px;
     overflow-x: hidden;
 }
 .hover-div{
@@ -23,17 +25,20 @@ body{
     border: 5px double #fff;
     font-size: 18px;
     padding: 30px;
-    background: linear-gradient(69deg,var(--slider) 55%,var(--secondary));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadowbox);
     height: 249px;
     line-height: 30px;
-    color:#fff;
     margin-top: -10px;
+    margin-left:20px;
 }
 .hover-div .hover-title:hover{
     background: var(--hover);
 }
 .hover-div .hover-title{
     cursor: pointer;
+    border-radius: 12px;
     padding:10px;
     list-style: none;
     height: 40px;
@@ -41,8 +46,10 @@ body{
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 550;
-    background:linear-gradient(293deg,var(--slider) 55%,var(--secondary));
-    color:#fff;
+   box-shadow: var(--shadowbox);
+   background-color: var(--slider);
+   color:#fff;
+    
 }
 .first-div{
     margin-top:-10px;
@@ -76,21 +83,21 @@ td{
 text-align: center;
     height:40px;
 }
-.faq-item:hover{
-    background-color: var(--hover);
-}
+
 .faq-item{
+    text-align: left;
     cursor: pointer;
-    border: 5px double var(--secondary);
-    padding:23px;
-    margin:5px;
-    border-radius:30px;
-    background:var(--slider);
-    color:#fff;
+    color:var(--slider);
+    box-shadow: var(--shadowbox);
+    border-radius: 9px;
+    margin-bottom: 5px;
+}
+.faq-q{
+    padding:15px;
 }
 footer{
     margin-top:20px;
-    border-radius: 60px 60px 0 0;
+    border-radius: 10px 10px 0 0;
     background: linear-gradient(180deg, var(--slider) 95%, var(--secondary));
     color: #fff;
     font-size: 18px;
@@ -98,6 +105,10 @@ footer{
     text-align: center;
     padding: 10px;
     margin-bottom: -30px;
+    margin-top:40px;
+}
+footer li{
+    list-style: none;
 }
 .vid-vid{
     padding-inline-start: 50px;
@@ -116,6 +127,7 @@ footer{
 }
 .flip-box{
     background: var(--slider);
+    box-shadow: var(--shadowbox);
     width:22%;
     display: inline-block;
     color:#fff;
@@ -128,6 +140,16 @@ iframe{
     padding: 10px;
     background: #eee;
 }
+.faq-a{
+    display: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.faq-q span{
+float:right;
+font-size: 20px;
+}
 .table{
     border-collapse: separate;
     border-spacing: 10 10px;
@@ -138,6 +160,7 @@ iframe{
     background: var(--hover);
 }
 .table tr td{
+    box-shadow: var(--shadowbox);
     cursor: pointer;
     border: 3px solid var(--secondary);
     width: 31%;
@@ -233,9 +256,9 @@ background-size: cover;
    color: var(--secondary);
    font-size: 25px;
 }
-.footer-container div:not(:first-child){
+/* .footer-container div:not(:first-child){
     border-left: 3px solid var(--secondary);
-}
+} */
 /* mobile css */
 @media screen and (max-width:768px){
     .slider{
@@ -275,6 +298,7 @@ width:100%;
         list-style: none;
         display: block;
         line-height: 26px;
+        width:40%;
     }
     .menu-item a{
         display: block;
@@ -285,6 +309,7 @@ width:100%;
     .header{
         width: 100%;
         display: flex;
+        height:72px;
     }
     .menu-item{
         display: none;
@@ -307,10 +332,17 @@ width:100%;
     footer{
         text-align: left;
     }
+    .table tr td{
+        height:60px;
+        font-size:16px;
+    }
 
 }
 @media screen and (min-width:768px) {
     .mob-menu{
         display: none;
+    }
+    .faq-item{
+        width:65%;
     }
 }

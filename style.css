@@ -158,6 +158,8 @@ font-size: 20px;
 }
 .table tr td:hover{
     background: var(--hover);
+    transform: translate(4px, -4px);
+    transform: rotate(1deg);
 }
 .table tr td{
     box-shadow: var(--shadowbox);
@@ -180,7 +182,7 @@ font-size: 20px;
 }
 .sub-text{
     
-    font-size: 30px;
+    font-size: 25px;
 }
 .heading{
     text-align: center;
@@ -274,7 +276,7 @@ width:100%;
         width:96%;
     }
     .slider-text h3{
-        font-size:40px;
+        font-size:35px;
     }
     .vid-vid{
         padding: 0;

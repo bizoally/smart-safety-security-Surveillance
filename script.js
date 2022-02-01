@@ -2,15 +2,15 @@ var title1 =document.getElementById('title1');
 var text1=document.getElementById('text1');
 function changetext1(){
 
-   text1.innerHTML='We are creating a solution of most secure Transactions Through the ATM By using photo verification ';
+   text1.innerHTML='We Are working for Smart home with security Like User Can ON and OFF the appliances and can see the timing when it was open or close.';
 }
 function changetext2(){
 
-    text1.innerHTML='We saw many cases of fraud by using ATM and doing some tricks with the ATM or sometime by gussing pin';
+    text1.innerHTML='It is protect homes from some kind of burglars by alerting the home owner about it';
  }
  function changetext3(){
 
-    text1.innerHTML='ATMs Already have the software to fetch the user data based on card and also Cameras are already installed in the ATM so we can directly implement it';
+    text1.innerHTML='We will add our switches at the switch board for appliances and gates and also we can use motion sensors';
  }
  function changetext4(){
 

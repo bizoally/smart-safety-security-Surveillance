@@ -2,11 +2,11 @@ var title1 =document.getElementById('title1');
 var text1=document.getElementById('text1');
 function changetext1(){
 
-   text1.innerHTML='We Are working for Smart home with security Like User Can ON and OFF the appliances and can see the timing when it was open or close.';
+   text1.innerHTML='We Are working for Smart shop with security Like User Can ON and OFF the appliances and can see the timing when it was open or close.';
 }
 function changetext2(){
 
-    text1.innerHTML='It is protect homes from some kind of burglars by alerting the home owner about it';
+    text1.innerHTML='It is protect shops from some kind of burglars by alerting the shop owner about it';
  }
  function changetext3(){
 
